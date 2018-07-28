@@ -1,0 +1,114 @@
+package com.calculator.Test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class CalculatorTest {
+
+	@Test
+	public void testAddTwoPositive() {
+		Maths math = new Maths();
+		int ans = math.add(2, 2);
+		Assert.assertEquals(4, ans);	
+	}
+	
+	
+	@Test
+	public void testAddTwoNegative() {
+		Maths math = new Maths();
+		int ans = math.add(-2, -2);
+		Assert.assertEquals(-4, ans);	
+	}
+	
+	
+	@Test
+	public void testAddTwoZeroes() {
+		Maths math = new Maths();
+		int ans = math.add(0, 0);
+		Assert.assertEquals(0, ans);	
+	}
+	
+	
+	@Test
+	public void testAddOneZeroesAndOnePositive() {
+		Maths math = new Maths();
+		int ans = math.add(0, 2);
+		Assert.assertEquals(2, ans);	
+	}
+	
+	
+	@Test
+	public void testAddOneZeroesAndOneNegative() {
+		Maths math = new Maths();
+		int ans = math.add(0, -2);
+		Assert.assertEquals(-2, ans);	
+	}
+	
+	
+	@Test
+	public void testAddOneNegativeAndOneGreaterPositive() {
+		Maths math = new Maths();
+		int ans = math.add(-2, 8);
+		Assert.assertEquals(6, ans);	
+	}
+
+	
+	@Test
+	public void testSubtractTwoPositives() {
+		Maths math = new Maths();
+		int ans = math.subtract(2, 2);
+		Assert.assertEquals(0, ans);		
+	}
+	
+	
+	@Test
+	public void testSubtractTwoNegatives() {
+		Maths math = new Maths();
+		int ans = math.subtract(-2, -2);
+		Assert.assertEquals(0, ans);		
+	}
+	
+	
+	@Test
+	public void testSubtractFirstNegativeAndSecondPositive() {
+		Maths math = new Maths();
+		int ans = math.subtract(-2, 8);
+		Assert.assertEquals(-10, ans);		
+	}
+	
+	
+	@Test
+	public void testSubtractFirstPositivetiveAndSecondNegative() {
+		Maths math = new Maths();
+		int ans = math.subtract(8, -2);
+		Assert.assertEquals(10, ans);		
+	}
+	
+	
+	@Test
+	public void testSubtractTwoZeroes() {
+		Maths math = new Maths();
+		int ans = math.subtract(0, 0);
+		Assert.assertEquals(0, ans);		
+	}
+	
+	
+	@Test
+	public void testMultiplyTwoZeroes() {
+		Maths math = new Maths();
+		int ans = math.multiply(0, 0);
+		Assert.assertEquals(0, ans);		
+	}
+	
+	
+	@Test
+	public void testMultiplyTwoPositives() {
+		Maths math = new Maths();
+		int ans = math.multiply(2, 2);
+		Assert.assertEquals(4, ans);		
+	}
+
+}

@@ -1,0 +1,57 @@
+package implementation.collection.Television;
+
+public class Television {
+
+	private String company;
+	private String type;
+	private boolean threedEnabled;
+	private double price;
+	
+	
+	public Television(String company, String type, boolean threedEnabled, double price) {
+		this.company=company;
+		this.type=type;
+		this.threedEnabled=threedEnabled;
+		this.price=price;
+	}
+	
+	
+	public String getCompany() {
+		return company;
+	}
+	public void setCompany(String company) {
+		this.company = company;
+	}
+	
+	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	
+	public boolean isThreedEnabled() {
+		return threedEnabled;
+	}
+	public void setThreedEnabled(boolean threedEnabled) {
+		this.threedEnabled = threedEnabled;
+	}
+	
+	
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	@Override
+	public String toString() 
+	{
+		return "Laptop [company= "+getCompany()+", type= "+getType()+", 3d Enabled= "+isThreedEnabled()+", price= "+getPrice()+"]";
+	}
+	
+	
+}

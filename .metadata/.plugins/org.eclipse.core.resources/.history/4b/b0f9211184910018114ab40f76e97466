@@ -1,0 +1,10 @@
+package implementation.collection;
+
+public class Collection {
+
+	public class Laptop
+	{
+		String company
+	}
+	
+}

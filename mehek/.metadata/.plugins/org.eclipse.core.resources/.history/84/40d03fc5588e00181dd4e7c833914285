@@ -1,0 +1,60 @@
+import java.util.*;
+public class VehicleTest 
+{
+	public static void main(String args[])
+	{
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter the number of vehicle");
+		int numberOfVehicle = scanner.nextInt();
+		
+		Vehicle[] vehicle = new Vehicle[numberOfVehicle];
+		
+		for(int i=0; i<numberOfVehicle; i++)
+		{
+			vehicle[i] = new Vehicle();
+		}
+		
+		Vehicle vehicleCons = new Vehicle(scanner.next());
+		
+		for(int i=0; i<numberOfVehicle; i++) {
+			System.out.println("Enter the name of the vehicle "+(i+1)+" 's initial owner");
+			vehicleCons.setInitialOwnerName(scanner.next());
+			
+			System.out.println("Enter the name of the vehicle "+(i+1)+" 's  owner");
+			vehicle[i].setOwnerName(scanner.next());
+			int id = vehicle[i].getVehicleIdNo();
+			
+			System.out.println("Enter the current speed of the vehicle "+(i+1));
+			vehicle[i].setCurrentSpeed(scanner.nextInt());
+			int currentSpeed = vehicle[i].getCurrentSpeed();
+			
+			System.out.println("Enter the current direction of the vehicle "+(i+1));
+			vehicle[i].setDirection(scanner.nextInt());
+			int direction = vehicle[i].getDirection();
+			
+			System.out.println("Which way do you want to go (left/right)?");
+			Scanner turn = new Scanner(System.in);
+			String answerTurn = turn.next();
+			int change = turn.nextInt();
+			
+			if(answerTurn.equals("left"))
+			{
+				int directionLeft = vehicle[i].turnLeft(50, change, direction);
+				System.out.println("The changed direction is "+directionLeft);
+			}
+			else 
+			{
+				int directionRight = vehicle[i].turnRight(50, change, direction);
+				System.out.println("The changed direction is "+directionRight);
+			}
+			
+			System.out.println("The changed speed is "+vehicle[i].changeSpeed(currentSpeed, change));
+			
+			System.out.println("The highest identification number is "+vehicle[i].gethighestIdentificationNumber(id));
+		}
+		
+		
+		
+	}
+}

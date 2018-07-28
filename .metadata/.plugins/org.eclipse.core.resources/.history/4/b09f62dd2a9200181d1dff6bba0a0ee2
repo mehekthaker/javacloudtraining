@@ -1,0 +1,12 @@
+package com.factorial;
+
+public class FactorialTest {
+	
+	public static void main(String args[])
+	{
+		Factorial factorial = new Factorial();
+		
+		Scanner scanner = new Scanner(System.in);
+	}
+
+}

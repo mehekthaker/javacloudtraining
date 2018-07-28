@@ -1,0 +1,19 @@
+//implementing all the four access modifiers that is default, public, private, protected
+public class CheckDemo {
+
+	public static void main(String args[])
+	{
+		ImpProtected obj = new ImpProtected();
+		obj.display();
+		
+		DefaultClass obj1 = new DefaultClass();
+		obj1.display();
+		
+		ImpPublic obj2 = new ImpPublic();
+		obj2.display();
+		
+		ImpPrivate obj3 = new ImpPrivate();
+		obj3.display();
+	}
+	
+}

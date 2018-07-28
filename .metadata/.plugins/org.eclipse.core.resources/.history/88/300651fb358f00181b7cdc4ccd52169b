@@ -1,0 +1,10 @@
+
+public class Test {
+
+	public static void main(String args[]) 
+	{
+		Parent1 p1 = new Parent1();
+		Child c = new Child();
+	}
+	
+}

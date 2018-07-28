@@ -1,0 +1,21 @@
+//implementing all the four access modifiers that is default, public, private, protected
+public class CheckDemo {
+
+	public static void main(String args[])
+	{	
+		Check check = new Check();
+		
+		System.out.println("Variables accessed directly");
+		
+		System.out.println("This is the default access modifier" +check.num);
+		
+		System.out.println("This is the public access modifier" +check.num1);
+		
+		System.out.println("This is the protected access modifier" +check.num2);
+		
+		System.out.println("Variables accessed indirectly");
+		
+		System.out.println("This is the private access modifier" +check.num3);
+	}
+	
+}

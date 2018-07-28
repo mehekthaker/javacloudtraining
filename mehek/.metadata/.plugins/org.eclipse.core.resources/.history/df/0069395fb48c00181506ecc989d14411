@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class Complex {
+
+	public static void main(String args[])
+	{
+		ComplexTest number1 = new ComplexTest();
+		ComplexTest number2 = new ComplexTest();
+		
+		Complex result;
+		result = result.addComplex(number1, number2);
+	}
+}

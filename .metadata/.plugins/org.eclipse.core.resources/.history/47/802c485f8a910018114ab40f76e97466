@@ -1,0 +1,24 @@
+package implementation.collection;
+
+import java.util.List;
+
+import implementation.collection.Car.Car;
+import implementation.collection.CellPhone.CellPhone;
+import implementation.collection.Laptop.Laptop;
+import implementation.collection.School.School;
+import implementation.collection.Television.Television;
+
+public class Collection {
+	public static void main(String args[])
+	{
+		Car car = new Car();
+		CellPhone cellphone = new CellPhone();
+		Laptop laptop = new Laptop();
+		School school = new School();
+		Television television = new Television();	
+		
+		
+		List<Car> cars = new List<>();
+		cars.add("");
+	}	
+}

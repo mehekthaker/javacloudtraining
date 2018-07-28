@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Country&apos;" deleteContents="false" description="Delete resource &apos;Country&apos;" element1="/Country" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1532315890617"/>&#x0A;<refactoring comment="Delete resource &apos;PalindromeDescendingOrder&apos;" deleteContents="false" description="Delete resource &apos;PalindromeDescendingOrder&apos;" element1="/PalindromeDescendingOrder" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1532341992247"/>
+</session>

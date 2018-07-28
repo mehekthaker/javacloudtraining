@@ -1,0 +1,29 @@
+
+public class EntryPointMain {
+	
+	public static void main(String args[]) 
+	{
+		BankFactory mmbankfactory = new MMBankFactory();
+		
+		
+		
+		SavingsAcc  mmsavingacc1 = mmbankfactory.getNewSavingAccount(100, "Mehek", 8000, true);
+		CurrentAcc  mmcurrentacc = mmbankfactory.getNewCurrentAccount(100, "Mehek", 8000, 2000);
+		
+		mmcurrentacc.withdraw(5000);
+		System.out.println(mmcurrentacc);
+		mmcurrentacc.deposit(500);
+		System.out.println(mmcurrentacc);
+		mmcurrentacc.withdraw(5000);
+		System.out.println(mmcurrentacc);
+		
+		mmsavingacc1.withdraw(5000);
+		System.out.println(mmsavingacc1);
+		mmsavingacc1.withdraw(50000);
+		System.out.println(mmsavingacc1);
+		
+		SavingsAcc  mmsavingacc2 = mmbankfactory.getNewSavingAccount(101, "Mehek", 8000, false);
+		mmsavingacc1.withdraw(4000);
+	}
+
+}

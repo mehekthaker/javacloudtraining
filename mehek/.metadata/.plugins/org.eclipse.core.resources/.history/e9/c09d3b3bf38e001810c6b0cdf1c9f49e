@@ -1,0 +1,13 @@
+//Create a class with static and non-static member variables. Define static and non-static member functions. Create instance of this class 
+//and call both static and non-static member functions 
+public class Test {
+
+	StaticAndNonStatic sns = new StaticAndNonStatic();
+	sns.statMethod();
+	
+	StaticAndNonStatic sns1 = new StaticAndNonStatic();
+	sns1.nonStatMethod(300);
+	
+	
+	
+}

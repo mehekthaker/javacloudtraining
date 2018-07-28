@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class TimeTest {
+
+	public static void main(String args[])
+	{
+		Time time1 = new Time();
+		Time time2 = new Time();
+		Time totalTime = new Time();//Create three objects of the class
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the first time in hours");
+		time1.setHours(scanner.nextInt());
+		int timeHr1 = time1.getHours();
+		
+		System.out.println("Enter the first distance in feet");
+		time1.setMinutes(scanner.nextInt());
+		int timeMin1 = time1.getMinutes();
+		
+		System.out.println("Enter the second distance in inches");
+		time2.setHours(scanner.nextInt());
+		int timeHr2 = time2.getHours();
+		
+		System.out.println("Enter the second distance in feet");
+		time2.setMinutes(scanner.nextInt());
+		int timeMin2 = time2.getMinutes();
+		
+		totalTime = totalTime.sum(time1, time2);
+		System.out.println("Time is "+totalTime.getHours()+" hours and "+totalTime.getMinutes()+" minutes");
+	}
+
+}

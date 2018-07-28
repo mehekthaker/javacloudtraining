@@ -1,0 +1,12 @@
+
+public class Test {
+
+	public static void main(String args[])
+	{
+		Sub1 sub = new Sub1();
+		Sub1 sub1 = new Sub1(100);
+		Sub1 sub2 = new Sub1(1000,200);
+		
+	}
+	
+}

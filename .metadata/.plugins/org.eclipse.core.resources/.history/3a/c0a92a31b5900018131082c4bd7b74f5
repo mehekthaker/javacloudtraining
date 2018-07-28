@@ -1,0 +1,25 @@
+
+public class MMCurrentAcc extends CurrentAcc{
+
+	MMCurrentAcc(int accNo, String accNm, float accBal, float creditLimit)
+	{
+		super(accNo, accNm, accBal, creditLimit);
+	}
+	
+	
+	@Override
+	public void withdraw(float accBal, float amount)
+	{
+		//if(accBal >= (accBal + creditLimit))
+		//{
+			accBal = accBal - amount;
+		//}
+	}
+
+	/*@Override
+	public String toString()
+	{
+		return 
+	}*/
+	
+}

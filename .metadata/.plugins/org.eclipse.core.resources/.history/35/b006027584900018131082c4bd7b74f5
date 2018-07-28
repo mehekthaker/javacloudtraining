@@ -1,0 +1,13 @@
+
+public class TestMain {
+
+	public static void main(String args[])
+	{
+		C cc = new C();
+		cc.disp1();
+		cc.disp2();
+		cc.methodC();
+		
+	}
+	
+}

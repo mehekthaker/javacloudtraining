@@ -1,0 +1,31 @@
+
+public class ComplexTest {
+
+	private double real;
+	private double imaginary;
+	
+	
+	public double getReal() {
+		return real;
+	}
+	public void setReal(int real) {
+		this.real = real;
+	}
+	
+	
+	public double getImaginary() {
+		return imaginary;
+	}
+	public void setImaginary(int imaginary) {
+		this.imaginary = imaginary;
+	}
+	
+	public Complex addComplex(Complex number1, Complex number2) 
+	{
+		Complex result = new Complex();
+		result.real = number1.Real + number2.Real;
+		result.imaginary = number1.Real + number2.Imaginary;
+		return result;
+	}
+	
+}

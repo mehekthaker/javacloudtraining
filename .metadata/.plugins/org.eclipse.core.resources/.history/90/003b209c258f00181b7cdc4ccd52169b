@@ -1,0 +1,19 @@
+
+public class Two {
+
+	public static void main(String args[]) 
+	{
+		First first = new First();
+		Second second = new Second();
+		
+		first.multiply(2,7);
+		second.subtract(50, 30);
+		
+		First first1 = new First();
+		Second second1 = new Second();
+		
+		first1.divide(14,7);
+		second1.add(50, 3);
+	}
+	
+}

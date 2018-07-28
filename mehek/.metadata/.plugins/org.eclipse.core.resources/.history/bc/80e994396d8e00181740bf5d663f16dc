@@ -1,0 +1,28 @@
+//parent class is defined with one function and child class with the function having the same name but different 
+//argument. Create an instance of child class and call the functions
+
+class Calculate{
+	public float area(int radius)
+	{
+		return 3.14f*radius*radius;
+	}
+}
+
+
+public class Overloading extends Calculate
+{
+
+	public float area(int length, int breadth) 
+	{
+		return length*breadth;
+	}
+	
+	public static void main(String args[]) 
+	{
+		Overloading o = new Overloading();
+		o.area(10);
+		
+		Overloading o1 = new Overloading();
+		o1.area(10,20);
+	}
+}

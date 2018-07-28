@@ -1,0 +1,103 @@
+
+public class Vehicle {
+
+	private int currentSpeed;
+	private int direction;
+	private String ownerName;
+	private int vehicleIdNo;
+	private static int identificationNumber = 100000;
+	private String initialOwnerName;
+	private final int turn_left = 50;
+	private final int turn_right = 50;
+	private int change;
+	//private String turn;
+
+	Vehicle() {
+	}
+
+	Vehicle(String name) {
+		initialOwnerName = name;
+	}
+
+	public static int gethighestIdentificationNumber(int vehicleIdNo) {
+		int highestIdentificationNumber = vehicleIdNo;
+		return highestIdentificationNumber;
+	}
+
+	
+	public int getCurrentSpeed() {
+		return currentSpeed;
+	}
+	public void setCurrentSpeed(int currentSpeed) {
+		this.currentSpeed = currentSpeed;
+	}
+	public int changeSpeed(int currentSpeed, int change) {
+		int changeSpeed = currentSpeed + change;
+		return changeSpeed;
+	}
+	public void stop(int currentSpeed) {
+		this.currentSpeed = 0;
+	}
+	
+
+	public int getDirection() {
+		return direction;
+	}
+	public void setDirection(int direction) {
+		this.direction = direction;
+	}
+	public int turnLeft(int turn_left, int change, int direction) 
+	{
+		direction = direction + change + turn_left;
+		if(direction>=360) {
+			direction = direction - 360;
+		}
+		
+		return direction;
+	}	
+	public int turnRight(int turn_right, int change, int direction) 
+	{
+		direction = direction - change - turn_right;
+		if(direction<0) {
+			direction =360 - direction;
+		}
+		return direction;
+	}
+	
+	
+	public String getOwnerName() {
+		return ownerName;
+	}
+	public void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
+	}
+
+	
+	public String getInitialOwnerName() {
+		return initialOwnerName;
+	}
+	public void setInitialOwnerName(String initialOwnerName) {
+		this.initialOwnerName = initialOwnerName;
+	}
+
+	
+	public int getVehicleIdNo() {
+		int vehicleIdNo = identificationNumber + 1;
+		identificationNumber+=1; 
+		return vehicleIdNo;
+	}
+
+	
+//	public int changeDirection(String turn) 
+//	{
+//    	if(turn.equals("left"))
+//  	    {
+//			return turnLeft(turn_left, change, direction);
+//		}
+//		else
+//		{
+//			return turnRight(turn_right, change, direction);
+//		}
+//}
+
+}

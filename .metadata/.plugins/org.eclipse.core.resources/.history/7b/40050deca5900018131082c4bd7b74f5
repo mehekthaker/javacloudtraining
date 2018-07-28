@@ -1,0 +1,19 @@
+package com.calculator.Test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class AdditionTest {
+
+	@Test
+	public void testAddTwoPositive() {
+		Maths math = new Maths();
+		int ans = math.add(2, 2);
+		Assert.assertEquals(4, ans);
+	
+	}
+
+}

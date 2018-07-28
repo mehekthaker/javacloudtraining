@@ -1,0 +1,56 @@
+package implementation.collection.Car;
+
+public class Car {
+	
+	private String model;
+	private double price;
+	private int year;
+	private String make;
+	
+//	Car(String model, double price, int year, String make)
+//	{
+//		this.model=model;
+//		this.price=price;
+//		this.year=year;
+//		this.make=make;
+//	}
+//		
+//		
+//		public Car() {
+//		// TODO Auto-generated constructor stub
+//	}
+
+
+		public String getModel() {
+			return model;
+		}
+		public void setModel(String model) {
+			this.model = model;
+		}
+		
+		
+		public double getPrice() {
+			return price;
+		}
+		public void setPrice(double price) {
+			this.price = price;
+		}
+		
+		
+		public int getYear() {
+			return year;
+		}
+		public void setYear(int year) {
+			this.year = year;
+		}
+		
+		
+		public String getMake() {
+			return make;
+		}
+		public void setMake(String make) {
+			this.make = make;
+		}
+		
+	}
+

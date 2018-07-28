@@ -1,0 +1,26 @@
+package com.calculator.Test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class SubtractionTest {
+
+	@Test
+	public void testSubtractTwoPositives() {
+		Maths math = new Maths();
+		int ans = math.subtract(2, 2);
+		Assert.assertEquals(0, ans);		
+	}
+	
+	
+	@Test
+	public void testSubtractTwoNegatives() {
+		Maths math = new Maths();
+		int ans = math.subtract(-2, -2);
+		Assert.assertEquals(0, ans);		
+	}
+
+}

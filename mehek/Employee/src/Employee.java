@@ -1,0 +1,53 @@
+import java.util.*;
+
+public class Employee {
+
+	public static void main(String args[])
+	{
+		
+		EmployeeDetails employeeDetails = new EmployeeDetails();
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the employee ID");
+		employeeDetails.setID(scanner.nextInt());
+		
+		System.out.println("Enter the employee name");
+		employeeDetails.setName(scanner.next());
+		
+		System.out.println("Enter the basic salary of the Employee");
+		employeeDetails.setMonthlyBasic(scanner.nextInt());
+		
+		System.out.println("Enter the PF rate of the Employee");
+		employeeDetails.setPFRate(scanner.nextFloat());
+		float pf =employeeDetails.getPFRate();
+		
+		float monthlyBasic = employeeDetails.getMonthlyBasic();
+		int ID=employeeDetails.getID();
+		String name = employeeDetails.getName();
+		System.out.println("The Employee has name "+name+" has ID no "+ID+"and basic salary is "+monthlyBasic);
+		
+		float annualBasic = employeeDetails.getAnnualBasic(monthlyBasic);
+		System.out.println("The Annual basic of the Employee is "+annualBasic);
+		
+		double hra = employeeDetails.getHRA(monthlyBasic);
+		
+		double monthlyGrossSalary = employeeDetails.getMonthlyGrossSalary(monthlyBasic, hra, 1250, 800);
+		System.out.println("The Monthly Gross Salary of the Employee is "+monthlyGrossSalary);
+		
+		double annualGrossSalary = employeeDetails.getAnnualGrossSalary(monthlyGrossSalary);
+		System.out.println("The Annual Gross Salary of the Employee is "+annualGrossSalary);
+		
+		double monthlyDeductions = employeeDetails.getMonthlyDeductions(pf, monthlyBasic, monthlyGrossSalary);
+		System.out.println("The monthly deductions of the Employee is "+monthlyDeductions);
+		
+		double monthlyTakeHome = employeeDetails.getMonthlyTakeHome(monthlyGrossSalary, monthlyDeductions);
+		System.out.println("The monthly take home of the Employee is "+monthlyTakeHome);
+		
+		double annualTakeHome = employeeDetails.getAnnualTakeHome(monthlyTakeHome);
+		System.out.println("The Annual take home of the Employee is "+annualTakeHome);
+		
+		
+		
+		
+	}
+}

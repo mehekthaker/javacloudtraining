@@ -1,0 +1,45 @@
+abstract class Shape
+{
+	abstract void draw();
+}
+
+class Circle extends Shape
+{
+	void draw() 
+	{
+		System.out.println("drawing Circle");
+	}
+}
+
+class Polygon extends Shape
+{
+	void draw() 
+	{
+		System.out.println("drawing Polygon");
+	}
+}
+
+class Rectangle extends Shape
+{
+	void draw() 
+	{
+		System.out.println("drawing Rectangle");
+	}
+}
+
+
+public class ShapeDemo {
+
+	public static void main(String args[]) 
+	{
+		Shape s = new Circle();
+		s.draw();
+		
+		Shape s1 = new Polygon();
+		s1.draw();
+		
+		Shape s2 = new Rectangle();
+		s2.draw();
+		
+	}
+}

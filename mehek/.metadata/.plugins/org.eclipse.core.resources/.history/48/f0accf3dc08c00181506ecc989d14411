@@ -1,0 +1,40 @@
+
+public class Complex {
+	
+	private int real;
+	private int imaginary;
+	
+	//Complex(){}
+	
+	//Complex(int real1, int imaginary1)
+	//{
+		//real=real1;
+		//imaginary=imaginary1;
+	//}
+
+	public int getReal() {
+		return real;
+	}
+
+	public void setReal(int real) {
+		this.real = real;
+	}
+
+	public int getImaginary() {
+		return imaginary;
+	}
+
+	public void setImaginary(int imaginary) {
+		this.imaginary = imaginary;
+	}
+	
+	Complex sum(Complex C1, Complex C2) 
+	{
+		Complex csum = new Complex();
+		csum.real = C1.real + C2.real;
+		csum.imaginary = C1.imaginary + C2.imaginary;
+		return csum;
+	}
+
+	
+}

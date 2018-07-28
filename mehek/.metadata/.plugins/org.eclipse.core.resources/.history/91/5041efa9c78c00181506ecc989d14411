@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class DistanceTest {
+	public static void main(String args[])
+	{
+		Distance distance1 = new Distance();
+		Distance distance2 = new Distance();
+		Distance totalDistance = new Distance();//Create three objects of the class
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		
+	}
+
+}

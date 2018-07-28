@@ -1,0 +1,30 @@
+
+public abstract class SavingsAcc extends BankAcc{
+
+	private boolean isSalaried;
+	private static final float MINBAL = 500;
+	
+	SavingsAcc(int accNo, String accNm, float accBal, boolean isSalaried)
+	{
+		super(accNo, accNm, accBal);
+//		this.accNo = accNo;
+//		this.accNm = accNm;
+//		this.accBal = accBal;
+		this.isSalaried = isSalaried;
+	}
+	
+	public void withdraw(float accBal, float amount)
+	{
+		if(accBal >= MINBAL)
+		{
+			accBal = accBal - amount;
+		}
+	}
+	
+	/*@Override
+	public String toString()
+	{
+		return 
+	}*/
+	
+}

@@ -1,0 +1,11 @@
+
+public class Child extends Parent1 implements Parent2
+{
+	
+	public void display() 
+	{
+		System.out.println("Child implements interface of Parent2");
+	}
+	
+
+}

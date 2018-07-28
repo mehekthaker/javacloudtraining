@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Vehicle"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="org.junit.rules.ExpectedException"/>
+<fullyQualifiedTypeName name="pack2.Org"/>
+<fullyQualifiedTypeName name="emppack.Employee"/>
+<fullyQualifiedTypeName name="implementation.collection.CellPhone.CellPhone"/>
+<fullyQualifiedTypeName name="implementation.collection.Laptop.Laptop"/>
+<fullyQualifiedTypeName name="implementation.collection.School.School"/>
+<fullyQualifiedTypeName name="implementation.collection.Television.Television"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="implementation.collection.Car.Car"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+</qualifiedTypeNameHistroy>

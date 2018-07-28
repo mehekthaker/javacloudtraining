@@ -1,0 +1,82 @@
+package implementation.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import implementation.collection.Car.Car;
+import implementation.collection.CellPhone.CellPhone;
+import implementation.collection.Laptop.Laptop;
+import implementation.collection.School.School;
+import implementation.collection.Television.Television;
+
+public class Collection {
+	public static void main(String args[])
+	{
+		Car car = new Car();
+		Car car1 = new Car();
+		Car car2 = new Car();
+		
+		CellPhone cellphone = new CellPhone();
+		CellPhone cellphone1 = new CellPhone();
+		CellPhone cellphone2 = new CellPhone();
+		
+		Laptop laptop = new Laptop();
+		Laptop laptop1 = new Laptop();
+		Laptop laptop2 = new Laptop();
+		
+		
+		School school = new School();
+		School school1 = new School();
+		School school2 = new School();
+		
+		Television television = new Television();
+		Television television1 = new Television();
+		Television television2 = new Television();
+		
+		
+		List<Car> cars = new ArrayList<Car>();
+		cars.add(car);
+		cars.add(car1);
+		cars.add(car2);
+		for(Car car11: cars)
+		{
+			System.out.println(car11);
+		}
+		
+		List<CellPhone> cell = new ArrayList<>();
+		cell.add(cellphone);
+		cell.add(cellphone1);
+		cell.add(cellphone2);
+		for(CellPhone cp: cell)
+		{
+			System.out.println(cp);
+		}
+		
+		List<Laptop> lap = new ArrayList<>();
+		lap.add(laptop);
+		lap.add(laptop1);
+		lap.add(laptop2);
+		for(Laptop lp: lap)
+		{
+			System.out.println(lp);
+		}
+		
+		List<School> schl = new ArrayList<>();
+		schl.add(school);
+		schl.add(school1);
+		schl.add(school2);
+		for(School sh: schl)
+		{
+			System.out.println(sh);
+		}
+		
+		List<Television> tv = new ArrayList<>();
+		tv.add(television);
+		tv.add(television1);
+		tv.add(television2);
+		for(Television telv: tv)
+		{
+			System.out.println(telv);
+		}
+	}	
+}

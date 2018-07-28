@@ -1,0 +1,57 @@
+
+public class Check {
+	
+	int num=1000;
+	public int num1=100;
+	
+	protected int num2=50;
+	private int num3=60;
+	
+	
+	public int getNum3() {
+		return num3;
+	}
+	
+
+	
+//	//implementing the default class	
+//		class DefaultClass
+//		{	
+//			void display() 
+//			{
+//				System.out.println("This is the default class");
+//			}
+//		}
+//
+//	//implementing the public class
+//		public class ImpPublic
+//		{
+//			
+//			public void display() 
+//			{
+//				System.out.println("This is the public class");
+//			}
+//		}
+//		
+//	//implementing the private access modifier
+//		public class ImpPrivate
+//		{
+//			private int i=10;
+//			private void display() 
+//			{
+//				System.out.println("This is the implementation of private access modifier");
+//			}
+//		}
+//		
+//	//implementing protected access modifier
+//		public class ImpProtected
+//		{
+//			protected int g = 4;
+//			protected void display() 
+//			{
+//				System.out.println("This is the implementation of protected access modifier");
+//			}
+//		}
+		
+	
+}

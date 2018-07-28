@@ -1,0 +1,58 @@
+package com.calculator.Test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class AdditionTest {
+
+	@Test
+	public void testAddTwoPositive() {
+		Maths math = new Maths();
+		int ans = math.add(2, 2);
+		Assert.assertEquals(4, ans);	
+	}
+	
+	
+	@Test
+	public void testAddTwoNegative() {
+		Maths math = new Maths();
+		int ans = math.add(-2, -2);
+		Assert.assertEquals(-4, ans);	
+	}
+	
+	
+	@Test
+	public void testAddTwoZeroes() {
+		Maths math = new Maths();
+		int ans = math.add(0, 0);
+		Assert.assertEquals(0, ans);	
+	}
+	
+	
+	@Test
+	public void testAddOneZeroesAndOnePositive() {
+		Maths math = new Maths();
+		int ans = math.add(0, 2);
+		Assert.assertEquals(2, ans);	
+	}
+	
+	
+	@Test
+	public void testAddOneZeroesAndOneNegative() {
+		Maths math = new Maths();
+		int ans = math.add(0, -2);
+		Assert.assertEquals(-2, ans);	
+	}
+	
+	@Test
+	public void testAddOneNegativeAndOneGreaterPositive() {
+		Maths math = new Maths();
+		int ans = math.add(-2, 8);
+		Assert.assertEquals(6, ans);	
+	}
+
+
+}

@@ -1,0 +1,32 @@
+
+public class RectangleShape {
+
+	private int length;
+	private int breadth;
+
+	public double getLength() {
+		return length;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
+	public double getBreadth() {
+		return breadth;
+	}
+	public void setBreadth(int breadth) {
+		this.breadth = breadth;
+	}
+	
+	public double rectArea(int length, int breadth) {
+		int area = length * breadth;
+		return area;
+	}
+	
+	public double rectPerimeter(int length, int breadth) {
+		int perimeter = 2 * (length + breadth);
+		return perimeter;
+	}
+
+}

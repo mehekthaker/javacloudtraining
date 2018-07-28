@@ -1,0 +1,16 @@
+
+public class StaticAndNonStatic {
+
+	static int i=1000;
+	int j;
+	
+	public static void statMethod(int i) 
+	{
+		System.out.println(i);
+	}
+	
+	public void nonStatMethod(int j) 
+	{
+		System.out.println(j);
+	}
+}

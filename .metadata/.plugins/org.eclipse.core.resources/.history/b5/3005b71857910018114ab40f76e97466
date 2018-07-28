@@ -1,0 +1,8 @@
+//Circle class implements abstract class shape
+class Circle extends Shape
+{
+	void draw() 
+	{
+		System.out.println("drawing Circle");
+	}
+}
