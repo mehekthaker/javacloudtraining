@@ -7,7 +7,19 @@ public class Book {
 	private double bookPrice;
 	private String authorName;
 	private String description;
+	private int bookCount=1;
 	
+
+	
+	public int getBookCount() {
+		return bookCount;
+	}
+
+
+	public void setBookCount(int bookCount) {
+		this.bookCount = bookCount;
+	}
+
 
 	public Book(int bookId, String bookName, double bookPrice, String authorName, String description) {
 		super();
@@ -37,6 +49,10 @@ public class Book {
 	public double getBookPrice() {
 		return bookPrice;
 	}
+	
+	public void setBookPrice(double bookPrice) {
+		this.bookPrice = bookPrice;
+	}
 
 
 	public String getAuthorName() {
@@ -49,12 +65,15 @@ public class Book {
 	}
 
 
-
 	@Override
 	public String toString() {
-		return "Book [bookName=" + bookName + ", bookPrice=" + bookPrice + ", authorName=" + authorName
-				+ ", description=" + description + "]";
+		return "Book [bookId=" + bookId + ", bookName=" + bookName + ", bookPrice=" + bookPrice + ", authorName="
+				+ authorName + ", description=" + description + ", bookCount=" + bookCount + "]";
 	}
+
+
+
+	
 
 
 	

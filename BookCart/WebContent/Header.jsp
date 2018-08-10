@@ -20,6 +20,7 @@ div{
 
 <div>
 <h1>Online Book Shopping Portal</h1>
+<a href="viewAll.app">Cart(${requestScope.cartCount})</a>
 </div>
 
 </body>

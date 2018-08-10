@@ -10,7 +10,7 @@ public interface BookDao {
 	
 	Collection<Book> viewAllBooks();
 	
-	public abstract void addToCart(int bookId);
+
 		
 	
 }

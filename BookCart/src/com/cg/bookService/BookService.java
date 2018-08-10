@@ -12,4 +12,9 @@ public interface BookService {
 	
 	public abstract void addToCart(int bookId);
 	
+	public abstract void deleteFromCart(int bookId);
+	
+	public int getCartCount();
+	
+	Collection<Book> viewCart();
 }

@@ -5,11 +5,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.cg.book.Book;
+import com.cg.cartlist.CartList;
 
 public class BookDaoImpl implements BookDao{
 	
 
-	private Map<Integer, Book> booksDB = new HashMap<Integer, Book>();
+	public static Map<Integer, Book> booksDB = new HashMap<Integer, Book>();
+	
 	
 	Book book = new Book(123,"Thinking in Java - 3rd Edition", 180, "Bruce Eckel", "Core Java book");
 	Book book1 = new Book(124,"Every Single Secret", 129, "Emily Carter", "A true psychological thriller that will leave you breathless");
@@ -38,11 +40,7 @@ public class BookDaoImpl implements BookDao{
 		return booksDB.values();
 	}
 
-	@Override
-	public void addToCart(int bookId) {
-		
-		
-	}
+	
 
 	
 
